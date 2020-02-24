@@ -1,0 +1,8 @@
+MovieManagerPanel
+	SearchPanel
+		Search
+		Filter
+	FormPanel
+	MovieTable
+		MovieHeaderTable
+		MovieRow

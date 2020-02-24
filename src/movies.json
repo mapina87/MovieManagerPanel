@@ -1,0 +1,25 @@
+{
+    "movies":[
+        {
+            "_id":1,
+            "title":"Movie 1",
+            "genre":"Action"
+        },
+        {
+            "_id":2,
+            "title":"Movie 2",
+            "genre":"Mistery"
+        },
+        {
+            "_id":3,
+            "title":"Movie 3",
+            "genre":"Action"
+        },
+        {
+            "_id":4,
+            "title":"Movie 4",
+            "genre":"Action"
+        }
+        
+    ]
+}
