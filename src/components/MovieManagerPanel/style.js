@@ -131,3 +131,106 @@ export const ButtonMovil = styled.button`
 /************************************************************
  ****** End Styles of FormPanel  and their components *******
  ************************************************************/
+ 
+/************************************************************
+ ****** Styles of MovieTable  and their components **********
+ ************************************************************/
+//Style for table of list movies.
+export const Table = styled.div`
+  width: 100%;
+  height: 430px;
+  margin-top:10px;
+  @media(max-width:40rem){
+      width: 84%;
+      margin-left:1.3em;
+  }
+`;
+
+export const HeaderTable = styled.div`
+  width: 100%;
+  height: 70px;
+  border-radius: 0.3em;
+  border: 1px solid black;
+  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:24px;
+  font-weight:bold;
+  @media(max-width:40rem){
+      display:none;
+  }
+`;
+
+export const ButtonDelete = styled.button`
+  border-radius: 0.5em;
+  width: 40px;
+  height: 40px;
+  margin-right: 0px;
+  margin-top: 0px;
+  background-color:#d34545;
+  visibility: hidden;
+  cursor:pointer;
+`;
+
+export const ButtonDeleteMovil = styled(ButtonDelete)`
+visibility: visible;
+`;
+
+export const Row = styled.div`
+  width: 100%;
+  height: 50px;
+  border-bottom: 1px solid lightgray;
+  display:flex;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:20px;
+  cursor:pointer;
+  :hover{
+    ${ButtonDelete}{
+      visibility:visible;
+    }
+  }
+  @media(max-width:40rem){
+      display:none;
+  }
+`;
+
+
+export const RowMovil = styled.div`
+  display:none;
+  justify-content:space-between;
+  padding: 10px;
+  padding-left:30px;
+  border-bottom: 1px solid lightgray;
+  cursor:pointer;
+
+  @media(max-width:40rem){
+      display:flex;
+  }
+`;
+
+export const CardContainer = styled.div`
+  display:flex;
+  flex-direction: column;
+  strong{
+    font-size:20px;
+  }
+  span{
+    color: gray;
+  }
+`
+
+export const Columns = styled.span`
+  width: 50%;
+  height: 100%;
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const ColumnsRows = styled(Columns)`
+  width: 45%;
+`;
+
+export const ColumnsAction = styled(Columns)`
+  width: 10%;
+`;
